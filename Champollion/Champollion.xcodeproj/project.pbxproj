@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B2DA38309E4D40006BC010 /* ChampollionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2DA37309E4D40006BC010 /* ChampollionApp.swift */; };
+		18B2DA3A309E4D40006BC010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2DA39309E4D40006BC010 /* ContentView.swift */; };
+		18B2DA3C309E4D43006BC010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B2DA3B309E4D43006BC010 /* Assets.xcassets */; };
+		18B2DA3F309E4D43006BC010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B2DA3E309E4D43006BC010 /* Preview Assets.xcassets */; };
+		18B2DA4A309E4D43006BC010 /* ChampollionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2DA49309E4D43006BC010 /* ChampollionTests.swift */; };
+		18B2DA54309E4D43006BC010 /* ChampollionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2DA53309E4D43006BC010 /* ChampollionUITests.swift */; };
+		18B2DA56309E4D43006BC010 /* ChampollionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2DA55309E4D43006BC010 /* ChampollionUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B2DA46309E4D43006BC010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B2DA2C309E4D40006BC010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B2DA33309E4D40006BC010;
+			remoteInfo = Champollion;
+		};
+		18B2DA50309E4D43006BC010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B2DA2C309E4D40006BC010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B2DA33309E4D40006BC010;
+			remoteInfo = Champollion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18B2DA34309E4D40006BC010 /* Champollion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Champollion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2DA37309E4D40006BC010 /* ChampollionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampollionApp.swift; sourceTree = "<group>"; };
+		18B2DA39309E4D40006BC010 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18B2DA3B309E4D43006BC010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B2DA3E309E4D43006BC010 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18B2DA40309E4D43006BC010 /* Champollion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Champollion.entitlements; sourceTree = "<group>"; };
+		18B2DA45309E4D43006BC010 /* ChampollionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChampollionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2DA49309E4D43006BC010 /* ChampollionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampollionTests.swift; sourceTree = "<group>"; };
+		18B2DA4F309E4D43006BC010 /* ChampollionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChampollionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B2DA53309E4D43006BC010 /* ChampollionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampollionUITests.swift; sourceTree = "<group>"; };
+		18B2DA55309E4D43006BC010 /* ChampollionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampollionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B2DA31309E4D40006BC010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2DA42309E4D43006BC010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2DA4C309E4D43006BC010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B2DA2B309E4D40006BC010 = {
+			isa = PBXGroup;
+			children = (
+				18B2DA36309E4D40006BC010 /* Champollion */,
+				18B2DA48309E4D43006BC010 /* ChampollionTests */,
+				18B2DA52309E4D43006BC010 /* ChampollionUITests */,
+				18B2DA35309E4D40006BC010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B2DA35309E4D40006BC010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B2DA34309E4D40006BC010 /* Champollion.app */,
+				18B2DA45309E4D43006BC010 /* ChampollionTests.xctest */,
+				18B2DA4F309E4D43006BC010 /* ChampollionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B2DA36309E4D40006BC010 /* Champollion */ = {
+			isa = PBXGroup;
+			children = (
+				18B2DA37309E4D40006BC010 /* ChampollionApp.swift */,
+				18B2DA39309E4D40006BC010 /* ContentView.swift */,
+				18B2DA3B309E4D43006BC010 /* Assets.xcassets */,
+				18B2DA40309E4D43006BC010 /* Champollion.entitlements */,
+				18B2DA3D309E4D43006BC010 /* Preview Content */,
+			);
+			path = Champollion;
+			sourceTree = "<group>";
+		};
+		18B2DA3D309E4D43006BC010 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18B2DA3E309E4D43006BC010 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18B2DA48309E4D43006BC010 /* ChampollionTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B2DA49309E4D43006BC010 /* ChampollionTests.swift */,
+			);
+			path = ChampollionTests;
+			sourceTree = "<group>";
+		};
+		18B2DA52309E4D43006BC010 /* ChampollionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18B2DA53309E4D43006BC010 /* ChampollionUITests.swift */,
+				18B2DA55309E4D43006BC010 /* ChampollionUITestsLaunchTests.swift */,
+			);
+			path = ChampollionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B2DA33309E4D40006BC010 /* Champollion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B2DA59309E4D43006BC010 /* Build configuration list for PBXNativeTarget "Champollion" */;
+			buildPhases = (
+				18B2DA30309E4D40006BC010 /* Sources */,
+				18B2DA31309E4D40006BC010 /* Frameworks */,
+				18B2DA32309E4D40006BC010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Champollion;
+			productName = Champollion;
+			productReference = 18B2DA34309E4D40006BC010 /* Champollion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B2DA44309E4D43006BC010 /* ChampollionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B2DA5C309E4D43006BC010 /* Build configuration list for PBXNativeTarget "ChampollionTests" */;
+			buildPhases = (
+				18B2DA41309E4D43006BC010 /* Sources */,
+				18B2DA42309E4D43006BC010 /* Frameworks */,
+				18B2DA43309E4D43006BC010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B2DA47309E4D43006BC010 /* PBXTargetDependency */,
+			);
+			name = ChampollionTests;
+			productName = ChampollionTests;
+			productReference = 18B2DA45309E4D43006BC010 /* ChampollionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18B2DA4E309E4D43006BC010 /* ChampollionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B2DA5F309E4D43006BC010 /* Build configuration list for PBXNativeTarget "ChampollionUITests" */;
+			buildPhases = (
+				18B2DA4B309E4D43006BC010 /* Sources */,
+				18B2DA4C309E4D43006BC010 /* Frameworks */,
+				18B2DA4D309E4D43006BC010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B2DA51309E4D43006BC010 /* PBXTargetDependency */,
+			);
+			name = ChampollionUITests;
+			productName = ChampollionUITests;
+			productReference = 18B2DA4F309E4D43006BC010 /* ChampollionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B2DA2C309E4D40006BC010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					18B2DA33309E4D40006BC010 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					18B2DA44309E4D43006BC010 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 18B2DA33309E4D40006BC010;
+					};
+					18B2DA4E309E4D43006BC010 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 18B2DA33309E4D40006BC010;
+					};
+				};
+			};
+			buildConfigurationList = 18B2DA2F309E4D40006BC010 /* Build configuration list for PBXProject "Champollion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B2DA2B309E4D40006BC010;
+			productRefGroup = 18B2DA35309E4D40006BC010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B2DA33309E4D40006BC010 /* Champollion */,
+				18B2DA44309E4D43006BC010 /* ChampollionTests */,
+				18B2DA4E309E4D43006BC010 /* ChampollionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B2DA32309E4D40006BC010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2DA3F309E4D43006BC010 /* Preview Assets.xcassets in Resources */,
+				18B2DA3C309E4D43006BC010 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2DA43309E4D43006BC010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2DA4D309E4D43006BC010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B2DA30309E4D40006BC010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2DA3A309E4D40006BC010 /* ContentView.swift in Sources */,
+				18B2DA38309E4D40006BC010 /* ChampollionApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2DA41309E4D43006BC010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2DA4A309E4D43006BC010 /* ChampollionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B2DA4B309E4D43006BC010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B2DA54309E4D43006BC010 /* ChampollionUITests.swift in Sources */,
+				18B2DA56309E4D43006BC010 /* ChampollionUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B2DA47309E4D43006BC010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B2DA33309E4D40006BC010 /* Champollion */;
+			targetProxy = 18B2DA46309E4D43006BC010 /* PBXContainerItemProxy */;
+		};
+		18B2DA51309E4D43006BC010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B2DA33309E4D40006BC010 /* Champollion */;
+			targetProxy = 18B2DA50309E4D43006BC010 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18B2DA57309E4D43006BC010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18B2DA58309E4D43006BC010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		18B2DA5A309E4D43006BC010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Champollion/Champollion.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Champollion/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inverse.Champollion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		18B2DA5B309E4D43006BC010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Champollion/Champollion.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Champollion/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inverse.Champollion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		18B2DA5D309E4D43006BC010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inverse.ChampollionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Champollion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Champollion";
+			};
+			name = Debug;
+		};
+		18B2DA5E309E4D43006BC010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inverse.ChampollionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Champollion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Champollion";
+			};
+			name = Release;
+		};
+		18B2DA60309E4D43006BC010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inverse.ChampollionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Champollion;
+			};
+			name = Debug;
+		};
+		18B2DA61309E4D43006BC010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inverse.ChampollionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Champollion;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B2DA2F309E4D40006BC010 /* Build configuration list for PBXProject "Champollion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2DA57309E4D43006BC010 /* Debug */,
+				18B2DA58309E4D43006BC010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B2DA59309E4D43006BC010 /* Build configuration list for PBXNativeTarget "Champollion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2DA5A309E4D43006BC010 /* Debug */,
+				18B2DA5B309E4D43006BC010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B2DA5C309E4D43006BC010 /* Build configuration list for PBXNativeTarget "ChampollionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2DA5D309E4D43006BC010 /* Debug */,
+				18B2DA5E309E4D43006BC010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B2DA5F309E4D43006BC010 /* Build configuration list for PBXNativeTarget "ChampollionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B2DA60309E4D43006BC010 /* Debug */,
+				18B2DA61309E4D43006BC010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18B2DA2C309E4D40006BC010 /* Project object */;
+}

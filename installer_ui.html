@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Champollion Installer</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--fg:#1d1d1f;--mut:#6e6e73;--line:#d2d2d7;--acc:#0a66d9}
+@media(prefers-color-scheme:dark){:root{--bg:#1e1e1e;--fg:#f5f5f7;--mut:#a1a1a6;--line:#424245;--acc:#4da3ff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px -apple-system,system-ui,sans-serif}
+main{max-width:640px;margin:32px auto;padding:0 20px}
+h1{font-size:22px;margin:0 0 4px}p.s{color:var(--mut);margin:0 0 20px}
+label{display:block;font-weight:600;margin:16px 0 6px}
+input,select{width:100%;box-sizing:border-box;padding:8px;border:1px solid var(--line);border-radius:6px;background:transparent;color:inherit;font:inherit}
+.row{display:flex;gap:8px}.row input{flex:1}
+button{padding:8px 14px;border:1px solid var(--line);border-radius:6px;background:transparent;color:inherit;font:inherit;cursor:pointer}
+button.p{background:var(--acc);border-color:var(--acc);color:#fff}
+#info,#out{margin-top:16px;padding:10px;border:1px solid var(--line);border-radius:6px;white-space:pre-wrap;display:none}
+progress{width:100%;margin-top:12px;display:none}
+.err{color:#d70015}.ok{color:#248a3d}
+</style></head><body><main>
+<h1>Champollion Installer</h1>
+<p class="s">Requires macOS 11 or later. Translation support is limited: simple integer code only.</p>
+<label for="path">App, installer or IPA</label>
+<div class="row"><input id="path" placeholder="/path/to/App.app, .pkg, .dmg, .ipa or Mach-O"><button id="browse">Browse…</button></div>
+<div id="info"></div>
+<label for="mode">Mode</label>
+<select id="mode">
+<option value="ipa">IPA: inspect and attempt translation</option>
+<option value="aot">AOT: emit x86-64 assembly</option>
+<option value="native">Native: copy or open</option>
+<option value="jit">JIT: build champollion-jit</option></select>
+<label for="dest">Destination folder (absolute path)</label><input id="dest">
+<p><button class="p" id="go">Start</button></p>
+<progress id="bar" max="1" value="0"></progress><div id="out"></div>
+<script>
+const $=id=>document.getElementById(id);
+const api=(p,b)=>fetch(p,b?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)}:{}).then(async r=>{const j=await r.json();if(!r.ok)throw new Error(j.error||r.statusText);return j});
+api('/api/status').then(s=>{$('dest').value=s.home+'/Applications/Champollion'});
+async function detect(){const p=$('path').value.trim();const i=$('info');if(!p){i.style.display='none';return}
+ try{const d=await api('/api/detect',{path:p});i.style.display='block';i.className='';
+  i.textContent=`Format: ${d.format}\nArchitectures: ${d.architectures.join(', ')||'unknown'}\nThis Mac: ${d.host_architecture}`+(d.error?`\n${d.error}`:'')+(d.warnings?'\n'+d.warnings.join('\n'):'');
+  if(d.format==='IPA')$('mode').value='ipa'}catch(e){i.style.display='block';i.className='err';i.textContent=e.message}}
+$('path').addEventListener('change',detect);
+$('browse').onclick=async()=>{const r=await api('/api/select-installer',{});if(r.path){$('path').value=r.path;detect()}};
+$('go').onclick=async()=>{const o=$('out'),b=$('bar');o.style.display='block';o.className='';o.textContent='Starting…';b.style.display='block';b.value=0;
+ try{const {task_id}=await api('/api/install',{mode:$('mode').value,input:$('path').value.trim(),destination:$('dest').value.trim()});
+  for(;;){const t=await api('/api/tasks/'+task_id);b.value=t.progress||0;o.textContent=t.message||'';
+   if(t.state==='complete'){o.className='ok';o.textContent=t.message+(t.artifact?'\n'+t.artifact:'')+(t.report?'\nReport: '+t.report:'');break}
+   if(t.state==='error'){o.className='err';break}await new Promise(r=>setTimeout(r,300))}}
+ catch(e){o.className='err';o.textContent=e.message}};
+</script></main></body></html>

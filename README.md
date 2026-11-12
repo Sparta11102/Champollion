@@ -1,8 +1,10 @@
-# champollion
+# champollion-jit
 
 An experimental ARM64 Mach-O loader/translator workbench targeting x86_64 macOS.
 The current CLI loads Mach-O files and decodes a limited entry-instruction set;
-full app translation is not implemented.
+full app translation is not implemented. See [STATUS.md](STATUS.md) for what works and what does not (it supersedes the status
+tables in older notes), and [MACOS_MONTEREY_HANDOFF.md](MACOS_MONTEREY_HANDOFF.md)
+for the architecture map, Monterey setup, verified behavior, and prioritized TODO.
 
 Based on the Champollion design (ProjectChampollion) — see `../ProjectChampollion-main/`
 for the upstream AOT extractor, the Ghidra AArch64 spec, and the design docs.
@@ -14,10 +16,10 @@ for the upstream AOT extractor, the Ghidra AArch64 spec, and the design docs.
 | 0 | Setup and research | **Done** — project scaffold, toolchain probe, design notes |
 | 1 | Mach-O loader and mini-dyld | **In progress** — loader parses fat/thin arm64 Mach-O (segments, sections, symtab, dylibs, chained fixups) |
 | 2 | Runtime skeleton | Pending |
-| 3 | Full ARM64 decoder | **In progress** — control-flow + MOV/ADD/SUBS decoded; broader ISA pending |
+| 3 | Full ARM64 decoder | **Integer ISA done** — Python and C++ decoders agree on 400k words; SIMD/FP and LSE atomics decoded as "valid, unsupported" |
 | 4 | IR and context | **Started** — SSA IR data model, `GuestContext`, verifier skeleton |
-| 5 | Testing infrastructure | Pending (differential vs. arm64 host required) |
-| 6 | x64 backend and first run | **Started** — exec-memory arena, x64 emit helpers, codegen stub |
+| 5 | Testing infrastructure | **Started** — differential tests run translated x86-64 against a Python ARM64 reference model (no real arm64 hardware in the loop yet) |
+| 6 | x64 backend and first run | **Started** — real JIT for integer code with loads/stores, stack and calls; SIMD/FP, atomics and external calls refused |
 | 7 | Memory management and atomics | Pending |
 | 8 | Floating point and SIMD | Pending |
 | 9 | Thunking and calling conventions | Pending |

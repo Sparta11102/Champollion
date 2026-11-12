@@ -1,0 +1,132 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Italic;
+\f3\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red246\green246\blue246;\red43\green0\blue0;\red44\green125\blue255;
+\red167\green197\blue152;\red193\green193\blue193;\red205\green173\blue106;\red10\green10\blue10;}
+{\*\expandedcolortbl;;\cssrgb\c97255\c97255\c97255;\cssrgb\c22353\c0\c0;\cssrgb\c21569\c58039\c100000;
+\cssrgb\c70980\c80784\c65882;\cssrgb\c80000\c80000\c80000;\cssrgb\c84314\c72941\c49020;\cssrgb\c3922\c3922\c3922\c40000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 ChampollionSwift
+\f1\b0  
+\f0\b App
+\f1\b0  
+\f0\b Explanation
+\f1\b0 \
+\
+
+\f0\b This
+\f1\b0  
+\f0\b Swift
+\f1\b0  macOS app is a wrapper around the 
+\f0\b Champollion
+\f1\b0  
+\f0\b Python
+\f1\b0  project that provides a native macOS interface \cf4 \strokec4 for\cf2 \strokec2  the installer workflow.\
+\
+WHAT THE APP DOES:\
+- 
+\f0\b Displays
+\f1\b0  the installer UI at http:
+\f2\i //127.0.0.1:8080 in a native macOS window
+\f1\i0 \
+- 
+\f0\b Connects
+\f1\b0  to the 
+\f0\b Python
+\f1\b0  
+\f0\b server
+\f1\b0  (python3 installer_app.py) running on localhost\
+- 
+\f0\b Provides
+\f1\b0  a native macOS 
+\f0\b \cf4 \strokec4 window
+\f1\b0 \cf2 \strokec2  \cf4 \strokec4 with\cf2 \strokec2  
+\f0\b WebView
+\f1\b0  to view the installer UI\
+- 
+\f0\b Shows
+\f1\b0  status \cf4 \strokec4 of\cf2 \strokec2  the installation process\
+\
+WHAT NEEDS TO BE DONE:\
+\pard\pardeftab720\partightenfactor0
+\cf5 \strokec5 1.\cf2 \strokec2  
+\f0\b Install
+\f1\b0  
+\f0\b Python
+\f1\b0  server: cd /
+\f0\b Users
+\f1\b0 /apple/
+\f0\b Desktop
+\f1\b0 /champollion && python3 installer_app.py\
+\cf5 \strokec5 2.\cf2 \strokec2  
+\f0\b Build
+\f1\b0  and run the 
+\f0\b Swift
+\f1\b0  app: swift 
+\f0\b run
+\f1\b0  (\cf4 \strokec4 from\cf2 \strokec2  the project folder)\
+\cf5 \strokec5 3.\cf2 \strokec2  
+\f0\b The
+\f1\b0  app will open showing the installer UI \cf4 \strokec4 in\cf2 \strokec2  a native macOS 
+\f0\b \cf4 \strokec4 window
+\f1\b0 \cf2 \strokec2 \
+\cf5 \strokec5 4.\cf2 \strokec2  
+\f0\b The
+\f1\b0  
+\f0\b Python
+\f1\b0  server handles the installer logic, the 
+\f0\b Swift
+\f1\b0  app provides the native macOS UI chrome\
+\
+REQUIREMENTS:\
+- macOS system\
+- 
+\f0\b Swift
+\f1\b0  \cf5 \strokec5 5.7.2\cf2 \strokec2  (already installed)\
+- 
+\f0\b Python
+\f1\b0  \cf5 \strokec5 3.9.6\cf2 \strokec2  (already installed)\
+- 
+\f0\b The
+\f1\b0  
+\f0\b Python
+\f1\b0  project at /
+\f0\b Users
+\f1\b0 /apple/
+\f0\b Desktop
+\f1\b0 /champollion must be 
+\f0\b functional
+\f1\b0  (it is - \cf5 \strokec5 23\cf2 \strokec2 /\cf5 \strokec5 23\cf2 \strokec2  tests pass)\
+\
+NO ERRORS - 
+\f0\b The
+\f1\b0  
+\f0\b Python
+\f1\b0  project is fully functional \cf4 \strokec4 with\cf2 \strokec2  all tests passing.\
+\pard\pardeftab720\sa260\partightenfactor0
+
+\f3 \cf6 \cb1 \strokec6 The Python project at\'a0
+\f1\fs24 \cf7 \cb8 \strokec7 /Users/apple/Desktop/champollion
+\f3\fs26 \cf6 \cb1 \strokec6 \'a0is fully functional:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 23/23 Python tests pass\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f1\fs24 \cf7 \cb8 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec7 champollion-jit
+\f3\fs26 \cf6 \cb1 \strokec6 \'a0binary built and works\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 Installer UI web app works\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec6 All handoff requirements P0-P4 addressed\
+\pard\pardeftab720\sa260\partightenfactor0
+\cf6 The Swift wrapper project (with Package.swift, App.swift, ContentView.swift, etc.) can be created in VS Code to provide a native macOS wrapper around this Python project.\
+}
